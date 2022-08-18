@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mix</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+            </script>
+             <script>
+                 $(document).ready(function(){
+                $("h1,h2").hide(function(){
+                    $("#Button1").click(function(){
+                        $("h1,h2").show(function(){
+                            $("#Button1").click(function(){
+                                 $("h1,h2").hide();
+                            });
+                        });    
+                    });
+                }); 
+                    $("#Button2").click(function(){
+                        $("h1").css("background-color","red");
+                    });   
+
+                    $("#Button2").click(function(){
+                        $("h2").css("background-color","blue");
+                    });    
+           });
+             </script>
+    </head>
+    <body>
+        <h1>paragraph</h1>
+        <h2>Lorem ipsum </h2>
+        <button id="Button1">Hide/Show</button>
+        <button id="Button2">color</button>
+    </body>
+</html>

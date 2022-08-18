@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation 1</title>
+            <style type="text/css">
+                img
+                {
+                    width: 200px;
+                    height: 200px;
+                    background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300);
+                    position: relative;
+                    animation-name: abc;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                
+                }
+
+                @keyframes abc{
+                    0%{ left: 0px; top: 0px; transform: rotate(0deg); border: 5px solid black;}
+                    25%{ left: 300px; top: 0px; transform: rotate(90deg); border: 5px solid blue; }
+                    50%{ left: 300px; top: 300px; transform: rotate(180deg); border: 5px solid coral;}
+                    75%{ left: 0px; top: 300px; transform: rotate(270deg); border: 5px solid teal;}
+                    100%{ left: 0px; top: 0px; transform: rotate(360deg); border: 5px solid slategrey;}
+                }
+            </style>
+    </head>
+    <body>
+        <img src="https://png.pngtree.com/png-vector/20220721/ourmid/pngtree-army-military-man-holding-indian-trio-color-flag-with-india-map-png-image_5947761.png" alt="">
+    </body>
+</html>
